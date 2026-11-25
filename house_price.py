@@ -8,8 +8,8 @@ import joblib
 
 st.title('House Price Prediction')
 
-Model = joblib.load('E:/Housepredictionmodel.joblib')
-Scaler = joblib.load('E:/Housepricepredictionscaler.joblib')
+Model = joblib.load('Housepredictionmodel.joblib')
+Scaler = joblib.load('Housepricepredictionscaler.joblib')
 
 Col1, Col2, Col3 = st.columns(3)
 SquareFootage = Col1.number_input("Square Footage", 500, 5000)
