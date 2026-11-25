@@ -29,7 +29,7 @@ st.set_page_config(
 st.title("Diamond_price Prediction")
 
 # Data Load
-df = pd.read_csv(r"D:\tops\python env\ML\data\diamonds.csv")
+df = pd.read_csv("diamonds.csv")
 df = df.drop(columns=["Unnamed: 0"])
 
 num_col_eda = ["carat", "depth", "table", "price", "x", "y", "z"]
