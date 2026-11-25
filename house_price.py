@@ -8,7 +8,14 @@ import joblib
 
 st.title('House Price Prediction')
 
-Model = joblib.load('Housepredictionmodel.joblib')
+import os
+import joblib
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+model_path = os.path.join(BASE_DIR, "Housepredictionmodel.joblib")
+
+Model = joblib.load(model_path)
 Scaler = joblib.load('Housepricepredictionscaler.joblib')
 
 Col1, Col2, Col3 = st.columns(3)
